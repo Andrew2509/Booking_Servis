@@ -11,6 +11,13 @@ Aplikasi pemesanan servis kendaraan berbasis Flutter.
 
 ## Langkah-langkah Instalasi
 
+# PUll yang Baru
+   ```bash
+   git status
+   git stash save "Test"
+   git pull origin main
+   ```
+
 1. **Clone Repository**
    ```bash
    git clone https://github.com/Andrew2509/Booking_Servis.git
