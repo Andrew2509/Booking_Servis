@@ -48,7 +48,7 @@ class WelcomePage extends StatelessWidget {
                 Text(
                   'Kepercayaan Anda\nPrioritas Kami',
                   style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.width * 0.08,
+                    fontSize: MediaQuery.of(context).size.width * 0.09,
                     fontWeight: FontWeight.w800,
                     color: Colors.black,
                     height: 1.1,
@@ -62,7 +62,7 @@ class WelcomePage extends StatelessWidget {
                   'bukan sekadar memperbaiki—kami merawat supaya\n'
                   'perjalananmu selalu aman, nyaman, dan bertenaga.',
                   style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.width * 0.025,
+                    fontSize: MediaQuery.of(context).size.width * 0.0284,
                     color: Colors.black87,
                     height: 1.5,
                     fontFamily: 'CreatoDisplay',

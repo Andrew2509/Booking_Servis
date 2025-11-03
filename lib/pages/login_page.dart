@@ -1,5 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'confirm_data_page.dart';
+import 'forgot_password_page.dart';
+import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -222,7 +225,13 @@ class _LoginPageState extends State<LoginPage> {
                           alignment: Alignment.centerRight,
                           child: TextButton(
                             onPressed: () {
-                              // Handle forgot password
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder:
+                                      (context) => const ForgotPasswordPage(),
+                                ),
+                              );
                             },
                             child: const Text(
                               'Forgot Password?',
@@ -241,7 +250,8 @@ class _LoginPageState extends State<LoginPage> {
                           height: 50,
                           child: ElevatedButton(
                             onPressed: () {
-                              // Handle sign in
+                              // Navigate to home page
+                              Navigator.pushReplacementNamed(context, '/home');
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xFFED0707),
@@ -260,25 +270,41 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 40),
-                        const Center(
-                          child: Text(
-                            'Sign up with',
-                            style: TextStyle(
-                              fontFamily: 'CreatoDisplay',
-                              color: Colors.black,
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
+                        const SizedBox(height: 10),
+                        Center(
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const RegisterPage(),
+                                ),
+                              );
+                            },
+                            child: const Text(
+                              'Sign up with',
+                              style: TextStyle(
+                                fontFamily: 'CreatoDisplay',
+                                color: Colors.black,
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ),
-                        const SizedBox(height: 12),
+                        const SizedBox(height: 5),
                         SizedBox(
                           width: double.infinity,
                           height: 50,
                           child: ElevatedButton.icon(
                             onPressed: () {
-                              // Handle Google sign in
+                              // Navigate to confirm data page
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ConfirmDataPage(),
+                                ),
+                              );
                             },
                             icon: Image.asset(
                               'assets/images/google_icon.png',
