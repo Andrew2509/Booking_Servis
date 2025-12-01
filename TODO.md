@@ -1,0 +1,6 @@
+- [x] Add TextEditingController for email, password, and confirm password fields in register_page.dart
+- [x] Modify TextFields to use the controllers
+- [x] Add validation logic to check if all fields are filled, passwords match, and privacy policy is checked
+- [x] Update the Sign Up button to be enabled only when form is valid
+- [x] Implement navigation to VerificationCodePage on button press
+- [x] Add error handling for password mismatch
